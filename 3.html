@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        var date = new Date();
+        var dd=date.getDate();
+        if (dd < 10) dd = '0' + dd;
+        var mm = date.getMonth()+1;
+        if (mm < 10) mm = '0' + mm;
+        document.body.innerHTML += '<div>Today is ' +dd +'/'+mm+'/'+date.getFullYear()+'</div>';
+    }
+</script>
+</body>
+</html>

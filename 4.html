@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+</head>
+<body>
+<p>Enter the length of the sides of the triangle:</p>
+<INPUT type="text" id="a" size = 10>
+<INPUT type="text" id="b" size = 10>
+<INPUT type="text" id="c" size = 10>
+<input type="button" id="calc" value="Calculate">
+
+<script>
+var butt = document.getElementById("calc");
+butt.onclick=function calculate () {
+        var a=0.0,b=0.0,c=0.0,result=0.0, p=0.0;
+        a= Number(document.getElementById("a").value);
+        b= Number(document.getElementById("b").value);
+        c= Number(document.getElementById("c").value);
+        p=(a+b+c)/2;
+        result=Math.pow((p*(p-a)*(p-b)*(p-c)),(0.5));
+        document.body.innerHTML+='<div>Result:' + result+'</div>';
+        }
+</script>
+</body>
+</html>

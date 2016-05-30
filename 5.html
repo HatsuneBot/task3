@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body>
+<span id="result"></span>
+<script>
+    (function() {
+        var word = ' w3resource ';
+
+        document.getElementById('result').innerHTML = word;
+
+        setInterval(function() {
+            var last = word.slice(-1);
+            var curr = word.slice(0,-1);
+            word = last+curr;
+            document.getElementById('result').innerHTML = word;
+        },150);
+
+    })();
+</script>
+</body>
+</html>

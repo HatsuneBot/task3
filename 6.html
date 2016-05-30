@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6</title>
+</head>
+<body>
+<p>Enter year:</p>
+<input type="text" id="year" size=5>
+<input type="button" id="check" value="Check">
+<script>
+    var butt=document.getElementById("check");
+    butt.onclick=function()
+    {
+        if ((year.value % 100 === 0) ? (year.value % 400 === 0) : (year.value % 4 === 0))
+                document.body.innerHTML+='<div>'+year.value+' year is a leap year in the Gregorian calendar</div>';
+        else
+            document.body.innerHTML+='<div>'+year.value+' year is not a leap year in the Gregorian calendar</div>';
+    }
+</script>
+</body>
+</html>
